@@ -9,6 +9,7 @@ import json
 import httpx
 from spacetraders.constants import SPACETRADERS_API_BASE_URL
 
+
 def build_register_agent_request(
     agent_symbol: str = None, agent_faction: str = "COSMIC"
 ) -> httpx.Request:

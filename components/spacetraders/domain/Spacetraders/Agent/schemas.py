@@ -13,12 +13,15 @@ from pydantic import (
     field_validator,
 )
 
+
 class SpacetradersAgentBase(BaseModel):
-    pass
+    accountId: str = Field(default="")
+    symbol: str = Field(default="")
+    headquarters: str = Field(default="")
+    credits: int = Field(default=0)
+    startingFaction: str = Field(default="")
+    shipCount: int = Field(default=0)
 
 
 class SpacetradersAgent(SpacetradersAgentBase):
-    account_id: str = Field(default=None)
-    symbol: str = Field(default=None)
-    faction: str = Field(default=None)
-    token: str = Field(default=None, repr=False)
+    pass

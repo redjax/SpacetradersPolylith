@@ -33,14 +33,15 @@ namespace = "spacetraders"
 theme = "loose"
 
 [tool.polylith.bricks]
-"bases/spacetraders/agent_registration/" = "spacetraders.agent_registration"
+"bases/spacetraders/agent_api/" = "spacetraders.agent_api"
 "components/spacetraders/config/" = "spacetraders.config"
 "components/spacetraders/constants/" = "spacetraders.constants"
-"components/spacetraders/register/" = "spacetraders.register"
+"components/spacetraders/registration/" = "spacetraders.registration"
 "components/spacetraders/log/" = "spacetraders.log"
 "components/spacetraders/request_client/" = "spacetraders.request_client"
 "components/spacetraders/random_data/" = "spacetraders.random_data"
 "components/spacetraders/domain/" = "spacetraders.domain"
+"components/tester/src/spacetraders/tester/" = "spacetraders.tester"
 
 [tool.ruff]
 target-version = "py311"
